@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header">
+                <div id="clear">
+                    <i class="fa fa-refresh" onclick="reset()"></i>
+                    <div class="img">
+                        <img src="wal.jpg">
+                    </div>
+                    <span id="datte"></span>
+                </div>
+            </div>
+            <div class="to-add">
+                <input type="text" placeholder="Enter a To-do" id="toDoItems" class="active" maxlength="40">
+                <i class="fa fa-plus-circle" onclick="addToDo()"></i>
+            </div>
+            <div class="list-section">
+                <ul id="list"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCYpcBVQABjJncVyw4gqMS_HNApIdSnkI8",
+        authDomain: "to-doapplication.firebaseapp.com",
+        databaseURL: "https://to-doapplication.firebaseio.com",
+        projectId: "to-doapplication",
+        storageBucket: "to-doapplication.appspot.com",
+        messagingSenderId: "983482733562",
+        appId: "1:983482733562:web:51080e4a752c0e9bc40a43",
+        measurementId: "G-2RMP63T5C7"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+</html>

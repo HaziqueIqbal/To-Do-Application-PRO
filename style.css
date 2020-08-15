@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+body{
+    text-align: center;
+    background-color: #f2f2f2;
+}
+html{
+    height: 100%;
+}
+.main{
+background-color: #ffffff;
+}
+span{
+    position: relative;
+    top: -45px;
+    right: 145px;
+    font-family: 'Fjalla One', sans-serif;
+    color: white;
+    font-size: 30px ;
+}
+.img img{
+    margin-top: -32px;
+   width: 500px;
+   opacity: 0.6;
+   border-radius: 18px 18px 0px 0px;
+}
+ul{
+    list-style: none;
+}
+.edit{
+    display: inline-block;
+    width: 300px;
+}
+.fa-trash{
+    font-size: 30px;
+    color: rgba(216, 45, 45, 0.815);
+    width: 50px;
+    cursor: pointer;
+}
+li{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 30px;
+    color: gray;
+    text-align: left;
+    margin-left: 25px;
+}
+.list{
+    width: 50px;
+}
+.fa-pencil-square-o{
+    font-size: 30px;
+    color: rgba(216, 45, 45, 0.815);
+ cursor: pointer;
+}
+.fa-refresh{
+    position: relative;
+    top: 25px;
+    left: 220px;
+    z-index: 1;
+    font-size: 30px !important;
+    cursor: pointer;
+    color: white;
+}
+.to-add{
+    padding: 20px;
+}
+.fa-plus-circle{
+    font-size: 30px !important;
+    color: rgba(216, 45, 45, 0.815);
+    width: 50px;
+    cursor: pointer;
+}
+#toDoItems{
+    height: 35px;
+    font-size: 25px;
+    width: auto;
+    font-family: 'Fjalla One', sans-serif;
+    width: 300px;
+    border-radius: 5px;
+    color: gray;
+    border:1px solid rgba(216, 45, 45, 0.815);
+    box-shadow: none;
+}
+input:focus{
+    outline: none;
+    border:1px solid rgba(216, 45, 45, 0.815);
+}
+
+input:hover {
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+input:focus:hover{
+    outline: none;
+    border:1px solid rgba(216, 45, 45, 0.815);
+    border-radius:0;
+    
+}
+
+
+.main{
+    margin-top: 30px;
+    border: 3px solid rgba(216, 45, 45, 0.815);
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    height: auto;
+    box-shadow: 10px 10px 5px rgb(68, 53, 53);
+}
+.container{
+    padding: 20px;
+}
+@media(max-width:600px){
+    .img img{
+        width: 350px;
+    }
+    .main{
+        width:350px;
+    }
+    span{
+        top: -30px;
+        right: 105px;
+        font-size: 20px;
+    }
+    #toDoItems{
+        width: 200px;
+        height: 25px;
+        font-size: 20px;
+        
+    }
+    .edit{
+        width: 150px;
+    }
+    li{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .fa-refresh{
+        left: 145px;
+    }
+    .fa-plus-circle{
+        font-size: 25px !important;
+    }
+}
+@media(max-width:380px){
+   .container{
+       padding: 0;
+   }
+   .img img{
+    width: 300px;
+}
+.fa-plus-circle{
+    font-size: 21px !important;
+}
+.main{
+    width:300px;
+}
+span{
+    top: -23px !important;
+    right: 97px !important;
+    font-size: 20px;
+}
+   body{
+       padding: 0;
+       margin: 0;
+   }
+   span{
+    top: -30px;
+    right: 100px;
+    font-size: 15px;
+}
+#toDoItems{
+    width: 200px;
+    height: 25px;
+    font-size: 20px;
+    
+}
+li{
+    margin-left: 0px;
+}
+.fa-refresh{
+    left: 120px;
+}
+}
