@@ -54,6 +54,7 @@ function allDelete(receive) {
 }
 function reset() {
     list.innerHTML = "";
+    firebase.database().ref("information").remove();
 }
 function ediit(receive) {
     var val = receive.parentNode.firstChild.firstChild.nodeValue;
